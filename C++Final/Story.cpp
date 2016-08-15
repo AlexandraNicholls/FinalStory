@@ -62,6 +62,7 @@ void Story::House()
 
 		//this house is now full of vampires. Hooray!
 		cout << "No one seems to have heard you. The house is quiet, but opulent. Red velvet drapes hang from the bannisters and over the doors of the rooms." << endl;
+		cout << "" << endl;
 	}
 	else if (roll == 2 || roll == 4)
 	{
