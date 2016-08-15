@@ -154,16 +154,60 @@ void Story::Forest()
 		//can you get away?
 		if (roll == 1 || roll == 3 || roll == 5)
 		{
-			cout << "As you run, stumbling down the path away from the woods, you get lost. The road seems to fall away in front of your feet... and you're back before the trees." << endl;
-			cout << "Panic grips you! You run again... again... again... but can never get far enough to lose track of the creak, creak of hanging bodies. " << endl;
+			cout << "Turning from the compulsion, you break away, running as hard as you can away from the swamp." << endl;
+			cout << "A figure looms through the mist ahead of you. Do you: " << endl;
+			cout << "1. Keep running. You gotta get out!" << endl;
+			cout << "2. Pause... what if it's dangerous?" << endl;
+			cout << "3. Go straight to ninja spin-kick mode." << endl;
+			choice = check.VerifyResponse();
+
+			switch (choice)
+			{
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				cout << "Spin for success." << endl;
+				roll = newDie.RollDice();
+
+				if (roll == 1 || roll == 3 || roll == 5)
+				{
+
+				}
+				else if (roll == 2 || roll == 4)
+				{
+
+				}
+				else
+				{
+					cout << "You strike the figure directly! They fall to the ground... And disappears into the mist." << endl;
+					cout << "Reaching the road, you find your way back to the crossroads... and just keep going." << endl;
+
+				}
+				break;
+			}
 		}
 		else if (roll == 2 || roll == 4)
 		{
-			cout << "Curious, you begin to approach. You get closer, tentatively reaching out to touch... and snatch your hand back. No way. But you can't stop walking into the forest." << endl;
+			cout << "Curious, you begin to approach. You get closer, tentatively reaching out to touch... they can't be real... and snatch your hand back. No way. But you can't stop walking into the forest." << endl;
+			cout << "Soon you lose sight of the path between the branches"
 		}
 		else
 		{
-
+			cout << "As you run, stumbling down the path away from the woods, you get lost. The road seems to fall away in front of your feet... and you're back before the trees." << endl;
+			cout << "Panic grips you! You run again... again... again... but can never get far enough to lose track of the creak, creak of hanging bodies. " << endl;
+			system("PAUSE");
+			exit(0);
+			switch (choice)
+			{
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			}
 		}
 		break;
 	case 2: 
